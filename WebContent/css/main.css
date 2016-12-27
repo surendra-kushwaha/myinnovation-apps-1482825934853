@@ -24,6 +24,10 @@ body {
 	width: 20%;
 }
 
+.tx {
+	margin-bottom: 5px;
+}
+
 .hide-arr-menu {
 	float: right;
 	top: 90px;
@@ -564,6 +568,13 @@ footer p{
 .above-txt {
 	margin-bottom: 2px;
 	font-weight: 600;
+	margin-top: 20px;
+}
+
+.create-ideas select.add-role-select {
+	border: none !important;
+	height: 35px !important;
+	background-color: transparent;
 }
 
 /*Commons*/
