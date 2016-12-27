@@ -23,19 +23,19 @@
 <div class="container sub-containers my-ideas create-ideas">
 <p class="hd1">My Ideas</p>
 <ul class="menus">
-	<li><a href="#/myinnovative-judge" class="tablinks" ng-click="openCity(event, 'London')" id="defaultOpen">JUDGE</a></li>
-	<li><a href="javascript:void(0)" class="tablinks" ng-click="openCity(event, 'Paris')">SPONSOR</a></li>
-	<li><a href="javascript:void(0)" class="tablinks" ng-click="openCity(event, 'London')">MENTOR</a></li>
-	<li><a href="javascript:void(0)" class="tablinks" ng-click="openCity(event, 'London')">CONTRIBUTOR</a></li>
-	<li><a href="javascript:void(0)" class="tablinks" ng-click="openCity(event, 'London')">INNOVATION CONTEST</a>
-	<li><a href="javascript:void(0)" class="tablinks active" ng-click="openCity(event, 'London')">INNOVATION CHALLENGE</a>
+	<li><a href="#/myinnovative-judge" class="tablinks" id="defaultOpen">JUDGE</a></li>
+	<li><a href="javascript:void(0)" class="tablinks">SPONSOR</a></li>
+	<li><a href="javascript:void(0)" class="tablinks">MENTOR</a></li>
+	<li><a href="javascript:void(0)" class="tablinks">CONTRIBUTOR</a></li>
+	<li><a href="#/myinnovative-innovcontest" class="tablinks">INNOVATION CONTEST</a>
+	<li><a href="javascript:void(0)" class="tablinks active">INNOVATION CHALLENGE</a>
 		<div class="arrow-right"></div>
 	</li>
 </ul>
 <ul class="menu tab">
-	<li><a href="javascript:void(0)" class="tablinks active" ng-click="openCity(event, 'London')" id="defaultOpen">Add New Challenge</a></li>
-	<li><a href="#/myinnovative-activechallenge" class="tablinks" ng-click="openCity(event, 'Paris')">Active Challenge</a></li>
-	<li><a href="javascript:void(0)" class="tablinks" ng-click="openCity(event, 'London')">Closed Challenge</a></li>
+	<li><a href="javascript:void(0)" class="tablinks active" id="defaultOpen">Add New Challenge</a></li>
+	<li><a href="#/myinnovative-activechallenge" class="tablinks">Active Challenge</a></li>
+	<li><a href="javascript:void(0)" class="tablinks">Closed Challenge</a></li>
 	<li style="float: right;width: 30%;margin-top: 6px;">
 	<span><a class="act-btn">Save as Draft</a></span>
 	<span><a class="dea-btn">Publish Challenge</a></span>
@@ -78,10 +78,10 @@
 		</div>
 		<div class="backs" style="width: 260px;margin: 0 auto;">
 			<br />
-			<div class="btn-highlight">Delegate this Challenge</div>
+			<div class="btn-highlight" ng-click="frontsShow()" >Delegate this Challenge</div>
 			<br />
 			<p style="text-align: center;">OR</p>
-			<p style="text-align: center;"><a ng-click="frontsShow()" style="color: #7f7f7f;cursor: pointer; text-decoration: none;">Continue to add values to below fields</a></p>
+			<p style="text-align: center;"><a style="color: #7f7f7f;cursor: pointer; text-decoration: none;">Continue to add values to below fields</a></p>
 		</div>
 		<div class="new-rght"><span><a ng-click="backsShow()" style="cursor: pointer;">< Back</a></span><span class="btn-highlight">Delegate this Challenge</span></div>
 	</div>

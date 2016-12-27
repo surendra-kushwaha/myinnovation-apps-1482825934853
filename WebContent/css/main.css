@@ -897,9 +897,7 @@ a.cancel-file {
     overflow-y: scroll;
 }
 
-/* ————————————————————–
-  Tree core styles
-*/
+
 .tree { margin: 1em;
 padding-left: 15px;
 }
@@ -913,9 +911,6 @@ padding-left: 15px;
 
 .tree input:checked ~ ul { display: block;     padding-left: 15px;}
 
-/* ————————————————————–
-  Tree rows
-*/
 .tree li {
   line-height: 1.2;
   position: relative;
@@ -927,9 +922,7 @@ padding-left: 15px;
 
 .tree > li:last-child { padding-bottom: 0; }
 
-/* ————————————————————–
-  Tree labels
-*/
+
 .tree_label {
   position: relative;
   display: inline-block;
@@ -940,9 +933,7 @@ label.tree_label { cursor: pointer; }
 
 label.tree_label:hover { color: #666; }
 
-/* ————————————————————–
-  Tree expanded icon
-*/
+
 label.tree_label:before {
   background: #000;
   color: #fff;
@@ -958,9 +949,9 @@ label.tree_label:before {
   line-height: .9em;
   }
 
-:checked ~ label.tree_label:before { content: '–'; }
+:checked ~ label.tree_label:before { content: '-'; }
 
-/* ————————————————————–
+/* ���������������������������������������������������������������
   Tree branches
 */
 .tree li:before {
@@ -1037,4 +1028,10 @@ label.tree_label:after { border-bottom: 0; }
 	width:260px;
 	height:60px;
 	margin-left:0px;
+}
+
+.flt-rg-p {
+	float: right;
+    right: 18px;
+    position: relative;
 }
