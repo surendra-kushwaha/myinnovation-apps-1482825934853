@@ -798,24 +798,24 @@ a.cancel-file {
 }
 
 .rate-box2 {
-	padding: 20px 22px;
+	padding: 10px 12px;
     display: inline-block;
     background: #bababa;
     margin-right: 20px;
     margin-bottom: 10px;
     border-radius: 3px;
-    font-size: 12px;
+    font-size: 11px;
     color: #fff;
 }
 
 .rate-box {
-	padding: 20px 22px;
+	padding: 10px 12px;
     display: inline-block;
     background: #666666;
     margin-right: 20px;
     margin-bottom: 10px;
     border-radius: 3px;
-    font-size: 12px;
+    font-size: 11px;
     color: #fff;
 }
 
@@ -1045,4 +1045,9 @@ label.tree_label:after { border-bottom: 0; }
 	float: right;
     right: 18px;
     position: relative;
+}
+
+.min-max span {
+	display: inline-block;
+	width: 30%;
 }
