@@ -14,6 +14,39 @@ app.controller('homeCtrl', function($scope, $location, $state, $http, $rootScope
     	//$("#defaultOpen").click();
       $scope.openCity(event, 'London', 1);
       
+      
+      $(".adv-search").off().on("click", function(){
+    	  //alert('');
+          $("#myTooltip1").popover({
+        	  title: "<div class='filter-contain'><ul><li>TBD</li></ul></div>",
+        	  html: true,
+              placement : 'bottom'
+          }); 
+    	  //$("#myTooltip1").tooltip('show');
+      });
+      
+      $(".knw-more").off().on("click", function(){
+    	  $("#myTooltip2").popover({
+              title: "<div class='filter-contain'><ul><li>Details Going on here...</li></ul></div>", 	
+              html: true,
+              placement : 'bottom'
+          }); 
+      });
+      
+      $(".filter-icon").click(function(){
+    	  //alert('');
+          $("#myTooltip").popover({
+              title: "<div class='filter-contain'><ul><li><input type='checkbox'>&nbsp;<label>Select All</label></li>" +
+              		"<li><input type='checkbox'>&nbsp;<label>Bluemix Challenge</label></li>" +
+              		"<li><input type='checkbox'>&nbsp;<label>Challenge2</label></li>" +
+              		"<li><input type='checkbox'>&nbsp;<label>Challenge3</label></li></ul></div>", 	
+              html: true,
+              placement : 'bottom'
+          }); 
+    	  //$("#myTooltip").tooltip('show');
+      });
+      
+      
       $(".left-arr-menu").off().on("click", function () {
         $(".float-major-menu, .hide-arr-menu").show();
         $(".hide-arr-menu").addClass("midl-menu");
@@ -116,4 +149,5 @@ app.controller('homeCtrl', function($scope, $location, $state, $http, $rootScope
 		});
   }
 });
+
 

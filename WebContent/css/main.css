@@ -28,6 +28,12 @@ body {
 	margin-bottom: 5px;
 }
 
+.filter-icon {
+	margin-left: -28px;
+	width: 18px;
+	cursor: pointer;
+}
+
 .hide-arr-menu {
 	float: right;
 	top: 90px;
@@ -219,10 +225,44 @@ a.med-size-fo:hover {
   padding: 0 25px;
 }
 
-.top-boxes-bar-new input {
+.top-boxes-bar {
+	margin-left: 0;
+  	margin-right: 0;
+}
+
+.top-banner-bar-new input {
 	width: 100%;
 	padding: 3px 6px;
 	color: #444;
+}
+
+.popover.bottom{
+	background-color: #000;
+	border-bottom-color: #000;
+	max-width: 170px;
+}
+
+.popover.bottom > .arrow:after{
+	border-bottom-color: #000;
+}
+
+.filter-contain ul{
+	margin: 0;
+	padding: 0;
+}
+
+.popover-title {
+	background-color: transparent;
+    border-bottom: 0;
+}
+
+.filter-contain ul li {
+    display: block;
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    font-size: 12px;
 }
 
 .pagination {
@@ -456,18 +496,25 @@ ul.tab {
 ul.tab li {float: left;}
 
 /* Style the links inside the list items */
-ul.tab li a {
+ul.tab li a:not(.adv-search) {
     display: inline-block;
     color: #cbcbcb;
     text-align: center;
-    padding: 25px 35px 16px;
+    padding: 25px 30px 16px;
     text-decoration: none;
     font-size: 13px;
     font-weight: bold;
 }
+.adv-search {
+	margin-top: 25px;
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 /* Change background color of links on hover */
-ul.tab li a:hover, ul.tab li a.active {border-bottom: solid 3px #1eb2e3; color: #000;}
+ul.tab li a:hover:not(.adv-search), ul.tab li a.active:not(.adv-search) {border-bottom: solid 3px #1eb2e3; color: #000;}
 
 /* Create an active/current tablink class */
 /*ul.tab li a:focus, ul.tab li.active {border-bottom: solid 3px #1eb2e3 !important;}*/
@@ -873,6 +920,28 @@ a.cancel-file {
     width: 100%;
     padding-bottom: 25px;
     margin-top: 20px;
+}
+
+.top-row3 {
+	border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.top-row3 .inner-left, .top-row3 .inner-right {
+	min-height: 180px;
+}
+.under-txt.new-unders .selected-s {
+    float: left;
+    margin-top: 12px;
+}
+
+.under-txt.new-unders {
+	float: left;
+    text-align: left;
+}
+
+.marks {
+	float: right;
 }
 
 .fronts, .new-rght {

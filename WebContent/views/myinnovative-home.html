@@ -28,25 +28,6 @@
 				<a href class="med-size-fo" style="font-size: 14px;text-decoration: underline;" data-toggle="modal" data-target="#myModal">How does it works?</a>
 			</div>
 		</div>
-		
-		<!-- Modal -->
-		<div id="myModal" class="modal fade" role="dialog">
-		  <div class="modal-dialog" style="background-color:#000000;opacity:70%;border-radius:10px;width:63%;height:400px;>
-			<!-- Modal content-->
-			<div class="modal-content">
-			  <div class="modal-header" style="border:none;">
-				<button type="button" class="close" data-dismiss="modal"><img style="width:100%;" src="images/icon_close_popup.png" border="0"></button>
-				<h4 class="modal-title"></h4>
-			  </div>
-			  <div style="text-align:center"><span style="font-family:open sans;font-size:40px;color:#dadada;width:200px;">How does idea contribution works?</span></div>
-			  <div class="modal-body">
-				<img style="width:100%;padding:20px;" src="images/How_does_it_work_diagram.png" border="0">
-			  </div>
-			  <div class="modal-footer" style="text-align:center;border:none;">
-				<img src="images/Btn_Add_idea.png" border="0">
-			  </div>
-			</div>
-		  </div>
 		</div>
 		
 		<div class="row">
@@ -107,7 +88,7 @@
 					<p class="bg-btmfnt">Hackathon 2016 - Industry Differentiation</p>
 					<p class="bg-btmfnt">Through Technology</p>
 					<p class="bg-btmfnt a-link" style="color: #007fc1 !Important; font-size: 13px;">Idea Submission - Dec 11th to Dec 29th</p>
-					<a href class="bg-btmfnt a-link a-link-h" style="display:block;text-decoration: underline;">Know More...</a>
+					<a href class="bg-btmfnt a-link a-link-h knw-more" data-toggle="tooltip" id="myTooltip2" style="display:block;text-decoration: underline;">Know More...</a>
 				</div>
 				<div class="menu-bg bck-msg">
 					<p class="bg-btmtp">Test Test Test Test Test Test Test</p>
@@ -118,12 +99,13 @@
 </div>
 <div class="container">
 	<ul class="menu tab">
-		<li><a href="javascript:void(0)" class="tablinks" ng-click="openCity(event, 'London')" id="defaultOpen">POPULAR IDEAS</a></li>
+		<li><a href="javascript:void(0)" class="tablinks" ng-click="openCity(event, 'London')" id="defaultOpen">POPULAR IDEAS</a><img data-toggle="tooltip" id="myTooltip" class="filter-icon" src="images/filter-icon.png"></li>
 		<li><a href="javascript:void(0)" class="tablinks" ng-click="openCity(event, 'Paris')">FAVOURITE IDEAS</a></li>
 		<li><a href="javascript:void(0)" class="tablinks" ng-click="openCity(event, 'London')">SUBSCRIBED IDEAS</a></li>
 		<li><a href="javascript:void(0)" class="tablinks" ng-click="openCity(event, 'Paris')">LIKED IDEAS</a></li>
-		<li style="float: right;width: 38%;margin-top: 6px;"><input type="text" class="search-box" placeholder="Search Idea">
+		<li style="width: 35%;margin-top: 6px;"><input type="text" class="search-box" placeholder="Search Idea">
 		<img src="images/icon_Search.png" class="img-search"></li>
+		<div style="float: right;" class="adv-search1"><a ng-init="openDefault()" data-toggle="tooltip" id="myTooltip1" href="javascript:void(0)" class="adv-search">Advance Search</a></div>
 	</ul>
 </div>
 
