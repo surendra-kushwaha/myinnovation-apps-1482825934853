@@ -927,6 +927,14 @@ a.cancel-file {
     padding-bottom: 0;
 }
 
+.inner-left p, .inner-right p{
+	width: 95%;
+}
+
+t.under-txt img:nth-child(2), t.under-txt p img:nth-child(2) {
+    float: right !important;
+}
+
 .top-row3 .inner-left, .top-row3 .inner-right {
 	min-height: 180px;
 }
