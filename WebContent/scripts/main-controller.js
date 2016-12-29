@@ -16,27 +16,55 @@ app.controller('homeCtrl', function($scope, $location, $state, $http, $rootScope
       
       
       $(".adv-search").off().on("click", function(){
-    	  //alert('');
+
           $("#myTooltip1").popover({
-        	  title: "<div class='filter-contain'><ul><li>TBD</li></ul></div>",
+        	  content: "<div class='container' style='width: 700px'><div class='row form-sub'>" +
+        	  			"<div class='col-xs-6 col-lg-6 col-md-6 col-sm-6'>" +
+        	  			"<p><label>Title</label><input type='text'></p>"+
+        	  			"<p><label>Contest</label><select class='in-sele'><option></option></select></p>"+
+        	  			"<p><label>Challenge</label><select class='in-sele'><option></option></select></p>"+
+        	  			"<p><label>Status</label><select class='in-sele'><option></option></select></p>"+
+        	  			"<p><label>Innovator Ent id</label><select class='in-sele'><option></option></select></p>"+
+        	  			"<p><label>Keywords/Tags</label><select class='in-sele'><option></option></select></p>"+
+        	  			"</div>"+
+        	  			"<div class='col-xs-6 col-lg-6 col-md-6 col-sm-6'>" +
+           	  			"<p class='date-icons'><span>From Date</span>" +
+    	  				"<span>End Date</span></p>"+
+        	  			"<p class='date-icons'><span><input type='text' placeholder='DD/MM/YYYY' class='dd'></span>" +
+        	  				"<span><input type='text' placeholder='DD/MM/YYYY' class='dd'></span></p>"+
+        	  			"<p>Application Entities</p>"+
+        	  			"<textarea></textarea>"+
+        	  			"<p class='date-icons'><span><a>Reset</a></span>" +
+        	  				"<span><a>Reset</a></span></p>"+
+        	  			"</div>"+
+        	  		"</div></div>",
         	  html: true,
               placement : 'bottom'
           }); 
+    	  //alert('');
+          setTimeout(function () {$('.popover-content').addClass('adjust-pops');}, 20);
     	  //$("#myTooltip1").tooltip('show');
       });
       
+      $('#myTooltip1').on('show.bs.popover', function () {
+    	  $('.popover-content').addClass('adjust-pops');
+    	});
+      
       $(".knw-more").off().on("click", function(){
+    	  var wid = $('.menu-bg').parent('div').width()+"px";
     	  $("#myTooltip2").popover({
-              title: "<div class='filter-contain'><ul><li>Details Going on here...</li></ul></div>", 	
+    		  content: "<div style='max-width:"+wid+"; width:"+wid+"' class='filter-contain'><ul><li>Details Going on here...</li></ul></div>", 	
               html: true,
               placement : 'bottom'
-          }); 
+          });
+    	  
+    	  //$("#myTooltip2").width($(".menu-bg").width());
       });
       
       $(".filter-icon").click(function(){
     	  //alert('');
           $("#myTooltip").popover({
-              title: "<div class='filter-contain'><ul><li><input type='checkbox'>&nbsp;<label>Select All</label></li>" +
+        	  content: "<div class='filter-contain' style='width: 180px'><ul><li><input type='checkbox'>&nbsp;<label>Select All</label></li>" +
               		"<li><input type='checkbox'>&nbsp;<label>Bluemix Challenge</label></li>" +
               		"<li><input type='checkbox'>&nbsp;<label>Challenge2</label></li>" +
               		"<li><input type='checkbox'>&nbsp;<label>Challenge3</label></li></ul></div>", 	
