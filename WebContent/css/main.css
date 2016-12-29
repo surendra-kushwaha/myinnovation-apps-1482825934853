@@ -471,7 +471,6 @@ li.selected {
     font-weight: 600;
     color: #333;
     margin-bottom: 0;
-    display: none;
 }
 
 .popularGraphData {
@@ -481,8 +480,7 @@ li.selected {
 .currency {
     float: left;
     margin: 1px 2px 0 0 !important;
-    /*display: inline-block;*/
-    display: none;
+    display: inline-block;
 }
 ul.tab {
     list-style-type: none;
