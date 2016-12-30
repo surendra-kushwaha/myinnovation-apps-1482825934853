@@ -29,9 +29,14 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'views/myinnovative-myideas.html',
 			controller: 'homeCtrl'
         })
-				.state('myinnovative-innovcontest', {
+		.state('myinnovative-innovcontest', {
             url: '/myinnovative-innovcontest',
             templateUrl: 'views/myinnovative-innovcontest.html',
+			controller: 'homeCtrl'
+        })
+        .state('myinnovative-mentordetails', {
+            url: '/myinnovative-mentordetails',
+            templateUrl: 'views/myinnovative-mentordetails.html',
 			controller: 'homeCtrl'
         });
 	$urlRouterProvider.otherwise('/myinnovative-landing');
