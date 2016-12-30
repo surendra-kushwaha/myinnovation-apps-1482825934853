@@ -15,7 +15,7 @@ app.controller('homeCtrl', function($scope, $location, $state, $http, $rootScope
       $scope.openCity(event, 'London', 1);
       
       
-      $(".adv-search").off().on("click", function(){
+      $(".adv-search").on("click", function(){
 
           $("#myTooltip1").popover({
         	  content: "<div class='container' style='width: 700px'><div class='row form-sub'>" +
@@ -42,8 +42,9 @@ app.controller('homeCtrl', function($scope, $location, $state, $http, $rootScope
               placement : 'bottom'
           }); 
     	  //alert('');
+          $("#myTooltip1").popover('show');
           setTimeout(function () {$('.popover-content').addClass('adjust-pops');}, 20);
-    	  //$("#myTooltip1").tooltip('show');
+    	  //$("#myTooltip1").popover('show');
       });
       
       $('#myTooltip1').on('show.bs.popover', function () {
@@ -57,7 +58,7 @@ app.controller('homeCtrl', function($scope, $location, $state, $http, $rootScope
               html: true,
               placement : 'bottom'
           });
-    	  
+    	  $("#myTooltip2").popover('show');
     	  //$("#myTooltip2").width($(".menu-bg").width());
       });
       
@@ -71,6 +72,7 @@ app.controller('homeCtrl', function($scope, $location, $state, $http, $rootScope
               html: true,
               placement : 'bottom'
           }); 
+          $("#myTooltip").popover('show');
     	  //$("#myTooltip").tooltip('show');
       });
       
