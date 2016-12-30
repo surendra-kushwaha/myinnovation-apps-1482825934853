@@ -38,6 +38,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/myinnovative-mentordetails',
             templateUrl: 'views/myinnovative-mentordetails.html',
 			controller: 'homeCtrl'
+        })
+        .state('myinnovative-mentor', {
+            url: '/myinnovative-mentor',
+            templateUrl: 'views/myinnovative-mentor.html',
+            controller: 'homeCtrl'
         });
 	$urlRouterProvider.otherwise('/myinnovative-landing');
 });
