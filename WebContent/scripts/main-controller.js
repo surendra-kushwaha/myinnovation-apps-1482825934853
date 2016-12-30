@@ -9,47 +9,52 @@ app.controller('homeCtrl', function($scope, $location, $state, $http, $rootScope
 		$('.fronts, .new-rght').show();
 		$('.backs').hide();	
 	};
+	
+
     $scope.openDefault = function () {
       //alert('');
     	//$("#defaultOpen").click();
       $scope.openCity(event, 'London', 1);
       
-      
+      $("#myTooltip1").popover({
+     	 /* content: "<div class='container' style='width: 700px'><div class='row form-sub'>" +
+     	  			"<div class='col-xs-6 col-lg-6 col-md-6 col-sm-6'>" +
+     	  			"<p><label>Title</label><input type='text'></p>"+
+     	  			"<p><label>Contest</label><select class='in-sele'><option></option></select></p>"+
+     	  			"<p><label>Challenge</label><select class='in-sele'><option></option></select></p>"+
+     	  			"<p><label>Status</label><select class='in-sele'><option></option></select></p>"+
+     	  			"<p><label>Innovator Ent id</label><select class='in-sele'><option></option></select></p>"+
+     	  			"<p><label>Keywords/Tags</label><select class='in-sele'><option></option></select></p>"+
+     	  			"</div>"+
+     	  			"<div class='col-xs-6 col-lg-6 col-md-6 col-sm-6'>" +
+        	  			"<p class='date-icons'><span>From Date</span>" +
+ 	  				"<span>End Date</span></p>"+
+     	  			"<p class='date-icons'><span><input type='text' placeholder='DD/MM/YYYY' class='dd'></span>" +
+     	  				"<span><input type='text' placeholder='DD/MM/YYYY' class='dd'></span></p>"+
+     	  			"<p>Application Entities</p>"+
+     	  			"<textarea></textarea>"+
+     	  			"<p class='date-icons'><span><a>Reset</a></span>" +
+     	  				"<span><a>Reset</a></span></p>"+
+     	  			"</div>"+
+     	  		"</div></div>",*/
+     	  content: $('#theformcontent').html(),
+     	  html: true,
+           placement : 'bottom'
+       }); 
       $(".adv-search").on("click", function(){
 
-          $("#myTooltip1").popover({
-        	  content: "<div class='container' style='width: 700px'><div class='row form-sub'>" +
-        	  			"<div class='col-xs-6 col-lg-6 col-md-6 col-sm-6'>" +
-        	  			"<p><label>Title</label><input type='text'></p>"+
-        	  			"<p><label>Contest</label><select class='in-sele'><option></option></select></p>"+
-        	  			"<p><label>Challenge</label><select class='in-sele'><option></option></select></p>"+
-        	  			"<p><label>Status</label><select class='in-sele'><option></option></select></p>"+
-        	  			"<p><label>Innovator Ent id</label><select class='in-sele'><option></option></select></p>"+
-        	  			"<p><label>Keywords/Tags</label><select class='in-sele'><option></option></select></p>"+
-        	  			"</div>"+
-        	  			"<div class='col-xs-6 col-lg-6 col-md-6 col-sm-6'>" +
-           	  			"<p class='date-icons'><span>From Date</span>" +
-    	  				"<span>End Date</span></p>"+
-        	  			"<p class='date-icons'><span><input type='text' placeholder='DD/MM/YYYY' class='dd'></span>" +
-        	  				"<span><input type='text' placeholder='DD/MM/YYYY' class='dd'></span></p>"+
-        	  			"<p>Application Entities</p>"+
-        	  			"<textarea></textarea>"+
-        	  			"<p class='date-icons'><span><a>Reset</a></span>" +
-        	  				"<span><a>Reset</a></span></p>"+
-        	  			"</div>"+
-        	  		"</div></div>",
-        	  html: true,
-              placement : 'bottom'
-          }); 
+          
     	  //alert('');
           $("#myTooltip1").popover('show');
-          setTimeout(function () {$('.popover-content').addClass('adjust-pops');}, 20);
+          //setTimeout(function () {$('.popover-content').addClass('adjust-pops');}, 20);
     	  //$("#myTooltip1").popover('show');
+          $('.pop-close').on('click', function () {
+        	  $("#myTooltip1").popover('hide');
+          });
       });
       
-      $('#myTooltip1').on('show.bs.popover', function () {
-    	  $('.popover-content').addClass('adjust-pops');
-    	});
+
+      
       
       $(".knw-more").off().on("click", function(){
     	  var wid = $('.menu-bg').parent('div').width()+"px";
