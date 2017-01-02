@@ -1228,3 +1228,17 @@ label.tree_label:after { border-bottom: 0; }
 	display: inline-block;
 	width: 30%;
 }
+
+
+
+.tbl .col-sm-2 {
+    width: 15% !important;
+}
+
+.tbl .col-sm-1 {
+    width: 12% !important;
+}
+
+.tbl .dea-btn.btns1 {
+	min-width: 130px;
+}
