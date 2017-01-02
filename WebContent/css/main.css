@@ -954,8 +954,12 @@ a.cancel-file {
 
 .inner-left, .inner-right {
 	float: left;
-    width: 50%;
+    width: 44%;
     min-height: 200px;
+}
+
+.inner-left {
+    margin-right: 12%;
 }
 
 .new-rght {
