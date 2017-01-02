@@ -52,7 +52,7 @@
    <div class="middle-added">
       <div class="top-row1" style="margin-top: 0">
          <div class="inner-left">
-            <p class="above-txt">*Challenge Name</p>
+            <p class="above-txt"><span class="astri">*</span>Challenge Name</p>
             <div>
                <input type="text" placeholder="">
                <p class="below-txt">
@@ -61,7 +61,7 @@
                </p>
             </div>
             <p class="above-txt">
-               <span>*Start Date</span><span>*End Date</span><span>*Close Date</span>
+               <span><span class="astri">*</span>Start Date</span><span><span class="astri">*</span>End Date</span><span><span class="astri">*</span>Close Date</span>
             </p>
             <div>
                <p class="date-icons"><span><input type="text" placeholder="DD/MM/YYYY">
@@ -97,7 +97,7 @@
       </div>
       <div class="top-row2">
          <div class="inner-left">
-            <p class="above-txt">*Applicable Entities</p>
+            <p class="above-txt"><span class="astri">*</span>Applicable Entities</p>
             <div>
                <div class="tree-box">
                   <ul class="tree">
@@ -165,7 +165,7 @@
       </div>
       <div class="top-row2">
          <div class="inner-left">
-         	<p class="above-txt">*Add Judges</p>
+         	<p class="above-txt"><span class="astri">*</span>Add Judges</p>
             <div>
                <input type="text" placeholder="Enterprise id">
                <p>
@@ -179,7 +179,7 @@
                </t>
                </p>
             </div>
-            <p class="above-txt" style="clear: both;">*Add Mentor</p>
+            <p class="above-txt" style="clear: both;"><span class="astri">*</span>Add Mentor</p>
             <div>
                <input type="text" placeholder="Enterprise id">
                <p>
@@ -193,7 +193,7 @@
                </t>
                </p>
             </div>
-            <p class="above-txt" style="clear: both;">*Add Invitees</p>
+            <p class="above-txt" style="clear: both;"><span class="astri">*</span>Add Invitees</p>
             <div>
                <input type="text" placeholder="Enterprise id">
                               <p>
@@ -211,7 +211,7 @@
             </div>
          </div>
          <div class="inner-right">
-            <p class="above-txt"><label class="bfr">*Client Co-Innovation</label>&nbsp;<span class="check-box"><input type="checkbox" checked></span></p>
+            <p class="above-txt"><label class="bfr"><span class="astri">*</span>Client Co-Innovation</label>&nbsp;<span class="check-box"><input type="checkbox" checked></span></p>
             <div>
                <input type="text" placeholder="Enterprise id">
                 <p>
@@ -221,7 +221,7 @@
                </p>
             </div>
             <br/>
-            <p class="above-txt">*Add Innovation Councillor</p>
+            <p class="above-txt"><span class="astri">*</span>Add Innovation Councillor</p>
             <div>
                <input type="text" placeholder="Enterprise id">
                 <p>
@@ -262,6 +262,7 @@
                <select>
                   <option>Select rating criteria</option>
                </select>
+                <p style="margin-bottom: 0"><span style="width: 40%">&nbsp;</span><span style="font-size: 12px;">Add Weightage value</span></p>
                <t class="under-txt new-unders">
                      <p><span class="selected-s">Usability&nbsp;<img src="images/icon_form_close.png" class="cls-btns"/></span><span class="marks"><input type="text"></span></p>
                      <p><span class="selected-s">Dollar Value Saving&nbsp;<img src="images/icon_form_close.png" class="cls-btns"/></span><span class="marks"><input type="text"></span></p>
@@ -274,20 +275,18 @@
             <p class="above-txt">0% of relevance Match for similar ideas</p>
             <div>
                <input type="text">
-               <p class="below-txt">
-                  <span>&nbsp;</span> 
-                  <t class="under-txt">&nbsp;</t>
-               </p>
             </div>
+            <p class="above-txt"><span class="equal2spans"><label class="bfr">Is Idea Sponsorship needed</label>&nbsp;<span class="check-box"><input type="checkbox" checked></span></span></p>
          </div>
          <div class="inner-right" style="min-height: 140px;">
-            <p class="above-txt"><span class="equal2spans"><label class="bfr">Is Mentor approval needed</label>&nbsp;<span class="check-box"><input type="checkbox" checked></span></span><span class="equal2spans">Max number of likes</span></p>
+            <p class="above-txt"><span class="equal2spans"><label class="bfr">Is Mentor approval needed</label>&nbsp;<span class="check-box"><input type="checkbox" checked></span></span></p>
             <div style="clear: both;">
-               <span class="equal2spans"><input type="text" placeholder="Max days"></span><span class="equal2spans"><input type="text" placeholder="Max Likes"></span>
-               <p class="below-txt">
-                  <span>&nbsp;</span> 
-                  <t class="under-txt">&nbsp;</t>
-               </p>
+               <span class="equal2spans"><input type="text" style="width: 30% !important" placeholder="3 days"></span><span class="equal2spans"><input type="text" style="width: 30% !important" placeholder="1 days"></span>
+               <span class="equal2spans btm-txt-sml">Mentor Reminder Notification trigger</span><span class="equal2spans btm-txt-sml">Mentor Escallation Notification trigger</span>
+            </div>
+             <div style="clear: both;">
+               <span class="equal2spans"><input type="text" style="width: 30% !important" placeholder="5 days"></span><span class="equal2spans">&nbsp;</span>
+               <span class="equal2spans btm-txt-sml" style="clear: both">Reassignment of ideas after mentor inaction</span><span class="equal2spans">&nbsp;</span>
             </div>
          </div>
       </div>
