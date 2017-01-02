@@ -1077,7 +1077,7 @@ padding-left: 15px;
   list-style-type: none;
   }
 
-.tree ul li { padding: 1em 0 0 1em; }
+.tree ul li { padding: 1em 0 0 1em; float: none; }
 
 .tree > li:last-child { padding-bottom: 0; }
 
@@ -1087,6 +1087,25 @@ padding-left: 15px;
   display: inline-block;
   background: #fff;
   }
+
+.pop-cross {
+	float: right;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pop-dates span {
+    display: inline-block;
+}
+
+.pop-dates input {
+    width: 106px;
+}
+
+.pop-dates img {
+    width: 22px;
+    margin-left: 16px;
+}
 
 label.tree_label { cursor: pointer; }
 
