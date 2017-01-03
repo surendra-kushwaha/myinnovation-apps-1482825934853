@@ -1252,7 +1252,7 @@ label.tree_label:after { border-bottom: 0; }
 }
 
 .add-fav-lnk {
-	margin: 20px 0;
+	margin: 0 0 20px 0;
     width: 100%;
     text-align: right;
     float: left;
