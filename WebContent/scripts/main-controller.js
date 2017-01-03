@@ -29,6 +29,8 @@ app.controller('homeCtrl', function($scope, $location, $state, $http, $rootScope
         	  $("#myTooltip1").popover('hide');
           });
       });
+      
+      
       $('body').on('click', function (e) {
       $('[data-toggle="popover"],[data-original-title]').each(function () {
           //the 'is' for buttons that trigger popups
@@ -125,6 +127,18 @@ app.controller('homeCtrl', function($scope, $location, $state, $http, $rootScope
 
       $scope.openCity =  function(evt, cityName, flag) {
     // Declare all variables
+    		$('.add-fav-lnk').on('click', function () {
+    		  	  $('.fav-page').hide();
+    		  	  $(".add-fav-section").show();
+    		    });
+    		
+    		$('.show-home-fav').on('click', function () {
+    		  	  $(".add-fav-section").hide();
+  		  	  $('.fav-page').show();
+  		    });
+    		
+    		
+    		
     var i, tabcontent, tablinks;
     //$(this).addClass('active').parent('li').siblings('li').children('a').removeClass('active');
     // Get all elements with class="tabcontent" and hide them

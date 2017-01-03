@@ -36,7 +36,7 @@
    </ul>
    <ul class="menu tab">
       <li><a href="javascript:void(0)" class="tablinks active" id="defaultOpen">Add New Challenge</a></li>
-      <li><a href="javascript:void(0)" class="tablinks">Active Challenge</a></li>
+      <li><a href="#/myinnovative-activechallenge" class="tablinks">Active Challenge</a></li>
       <li><a href="javascript:void(0)" class="tablinks">Closed Challenge</a></li>
       <li style="float: right;width: 30%;margin-top: 6px;">
          <span><a class="act-btn">Save as Draft</a></span>
@@ -85,12 +85,12 @@
                </p>
                </div>
             </div>
-            <div class="backs" style="width: 260px;margin: 0 auto;">
+            <div class="backs" style="width: 290px;margin: 40px auto 0;">
                <br />
-               <div class="btn-highlight" ng-click="frontsShow()" >Delegate this Challenge</div>
+               <div class="btn-highlight" ng-click="frontsShow()" style="text-align: center">Delegate this Challenge</div>
                <br />
                <p style="text-align: center;">OR</p>
-               <p style="text-align: center;"><a style="color: #7f7f7f;cursor: pointer; text-decoration: none;">Continue to add values to below fields</a></p>
+               <p style="text-align: center;width: 100%;"><a style="color: #7f7f7f;cursor: pointer; text-decoration: none;">Continue to add values to below <br>fields</a></p>
             </div>
             <div class="new-rght"><span><a ng-click="backsShow()" style="cursor: pointer;">< Back</a></span><span class="btn-highlight">Delegate this Challenge</span></div>
          </div>
@@ -145,15 +145,20 @@
                      </li>
                   </ul>
                </div>
-               <p class="below-txt">
-                  <span>&nbsp;</span> 
-                  <t class="under-txt">&nbsp;</t>
-               </p>
+                <p style="margin-top: 20px;"><span><label class="bfr">Private </label><input type=radio name="priv" checked></span> <span><label class="bfr">Public </label><input type=radio name="priv"></span></p>
+
             </div>
          </div>
          <div class="inner-right">
-            <p style="margin-top: 20px;"><span><label class="bfr">Private </label><input type=radio name="priv" checked></span> <span><label class="bfr">Public </label><input type=radio name="priv"></span></p>
-            <p class="above-txt"><label class="bfr">Challenge URL</label></p>
+            <p class="above-txt"><label class="bfr"><span class="astri">*</span>Description</label></p>
+            <div>
+               <textarea></textarea>
+               <p class="below-txt">
+                  <span>&nbsp;</span> 
+                  <t class="under-txt">2000 characters remaining (2000 maximum)</t>
+               </p>
+            </div>
+             <p class="above-txt"><label class="bfr">Challenge URL</label></p>
             <div>
                <input type="text" placeholder="Challenge home page URL">
                <p class="below-txt">
@@ -211,7 +216,7 @@
             </div>
          </div>
          <div class="inner-right">
-            <p class="above-txt"><label class="bfr"><span class="astri">*</span>Client Co-Innovation</label>&nbsp;<span class="check-box"><input type="checkbox" checked></span></p>
+            <p class="above-txt"><label class="bfr">Client Co-Innovation</label>&nbsp;<span class="check-box"><input type="checkbox" checked></span></p>
             <div>
                <input type="text" placeholder="Enterprise id">
                 <p>
@@ -221,6 +226,20 @@
                </p>
             </div>
             <br/>
+            <p class="above-txt" style="clear: both;"><span class="astri">*</span>Add Mentor (tier 2)</p>
+            <div>
+               <input type="text" placeholder="Enterprise id">
+               <p>
+               <t class="under-txt">
+                  <img src="images/Details-Followers1.png" class="cls-btns"/> Mentor Id <img src="images/icon_form_close.png" class="cls-btns"/>
+               </t>
+               </p>
+               <p>
+               <t class="under-txt">
+                  <img src="images/Details-Followers2.png" class="cls-btns"/> Mentor Id <img src="images/icon_form_close.png" class="cls-btns"/>
+               </t>
+               </p>
+            </div>
             <p class="above-txt"><span class="astri">*</span>Add Innovation Councillor</p>
             <div>
                <input type="text" placeholder="Enterprise id">
@@ -272,9 +291,9 @@
       </div>
       <div class="top-row4" style="border-bottom: 0">
          <div class="inner-left" style="min-height: 140px;">
-            <p class="above-txt">0% of relevance Match for similar ideas</p>
+            <p class="above-txt">% of relevance Match for similar ideas</p>
             <div>
-               <input type="text">
+               <input type="text" placeholder='enter %'>
             </div>
             <p class="above-txt"><span class="equal2spans"><label class="bfr">Is Idea Sponsorship needed</label>&nbsp;<span class="check-box"><input type="checkbox" checked></span></span></p>
          </div>
@@ -282,7 +301,7 @@
             <p class="above-txt"><span class="equal2spans"><label class="bfr">Is Mentor approval needed</label>&nbsp;<span class="check-box"><input type="checkbox" checked></span></span></p>
             <div style="clear: both;">
                <span class="equal2spans"><input type="text" style="width: 30% !important" placeholder="3 days"></span><span class="equal2spans"><input type="text" style="width: 30% !important" placeholder="1 days"></span>
-               <span class="equal2spans btm-txt-sml">Mentor Reminder Notification trigger</span><span class="equal2spans btm-txt-sml">Mentor Escallation Notification trigger</span>
+               <span class="equal2spans btm-txt-sml">Mentor Reminder Notification trigger</span><span class="equal2spans btm-txt-sml">Mentor escalation notification trigger</span>
             </div>
              <div style="clear: both;">
                <span class="equal2spans"><input type="text" style="width: 30% !important" placeholder="5 days"></span><span class="equal2spans">&nbsp;</span>
